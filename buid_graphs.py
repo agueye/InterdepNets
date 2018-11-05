@@ -8,8 +8,10 @@ in_file=base+"rdag"+str(4)+".txt"
 
 with open(in_file,"r") as f:
     line=f.readline()
+    line=line.strip('\n')
     count=1
     while line:
         count+=1
         links=list(line)
         print(links)
+
